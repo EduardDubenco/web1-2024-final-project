@@ -19,13 +19,10 @@ export default function NavBar() {
                             </a>
                         </li>
                         <li>
-                            <a id="button" href="#">Explore</a>
+                            <a id="button" href="#">Browse</a>
                         </li>
                         <li>
                             <a href="#">Manga</a>
-                        </li>
-                        <li>
-                            <a href="#">Novel</a>
                         </li>
                         <li>
                             <a id="button" href="#">News</a>
