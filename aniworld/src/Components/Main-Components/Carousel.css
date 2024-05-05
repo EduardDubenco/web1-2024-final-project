@@ -1,0 +1,54 @@
+.carousel {
+    width: 1050px; /* Latime carousel */
+    margin: 0 auto; /* Amplasare pe mijloc */
+    text-align: center; /* Aliniere centrala */
+    padding-top: 2em;
+}
+
+.active-image {
+    width: 100%; /* Latime 100% */
+    height: 525px; /* Inaltime proportionala */
+}
+
+.navigation {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.button {
+    margin: 5px; /* Spatiu intre butoane */
+    padding: 10px 20px; /* Umplutura butoanelor */
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #23252B;
+    color: #FFFFFF;
+}
+
+.active-button {
+    background-color: #F47521;
+    margin: 5px; /* Spatiu intre butoane */
+    padding: 10px 20px; /* Umplutura butoanelor */
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.time-indicator {
+    margin-top: 10px; /* Distanta de la butoane */
+}
+
+.link {
+    display: block;
+    margin-top: 10px; /* Distanta de la indicator timp */
+    padding: 10px 20px; /* Umplutura link-ului */
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #F47521;
+    cursor: pointer;
+}
+
+.active-button:hover {
+    background-color: #F47521;
+    cursor: pointer;
+}

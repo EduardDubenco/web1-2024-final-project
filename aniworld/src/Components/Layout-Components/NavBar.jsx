@@ -1,10 +1,9 @@
 import React from "react";
 import "./navbar.css";
 import logo from './img/Logo.png';
-import search from './img/search.svg';
-import bookmark from './img/bookmark.svg';
-import arrow_dropdown from './img/arrow-dropdown.svg';
-import avatar from './img/Retr0_ava.jpg';
+import AccountMenu from "./avatar";
+import SearchAppBar from "./search";
+import CategoriesButton from "../Main-Components/Categories";
 
 export default function NavBar() {
     return(
@@ -19,27 +18,21 @@ export default function NavBar() {
                             </a>
                         </li>
                         <li>
-                            <a id="button" href="#">Browse</a>
+                            <CategoriesButton/>
                         </li>
                         <li>
-                            <a href="#">Manga</a>
+                            <a href="https://www.crunchyroll.com/ru/games/">Games</a>
                         </li>
                         <li>
-                            <a id="button" href="#">News</a>
+                            <a id="button" href="https://www.crunchyroll.com/ru/news">News</a>
                         </li>
                     </ul>
                     <ul className="ul-right">
                         <li>
-                            <a id="li-right" href="#"><img src={search} alt=""/></a>
+                            <SearchAppBar/>
                         </li>
                         <li>
-                            <a id="li-right" href="#"><img src={bookmark} alt=""/></a>
-                        </li>
-                        <li>
-                            <a id="li-right" href="#">
-                                <img id="profile-logo" src={avatar} alt=""/>
-                                <img src={arrow_dropdown} alt=""/>
-                            </a>
+                            <AccountMenu/>
                         </li>
                     </ul>
                 </nav>

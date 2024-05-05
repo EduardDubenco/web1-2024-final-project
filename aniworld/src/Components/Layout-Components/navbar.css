@@ -26,17 +26,13 @@ nav.nav-head .ul-left li{
     padding: 1.1em;
 }
 
-.ul-left li:hover{
-    background-color: #0F1013;
-}
-
 nav.nav-head .ul-right{
     display: flex;
     align-items: center;
     list-style: none;
     width: 30%;
     margin-left: 15em;
-    margin-right: 5em;
+    margin-right: auto;
     height: 30px;
 }
 
@@ -57,15 +53,6 @@ nav.nav-head .ul-right li a{
     color: #FFFFFF;
 }
 
-#profile-logo{
-    border-radius: 100%;
-    width: 1.7em;
-}
-
 #li-right{
     display: flex;
-}
-
-.ul-right li:hover{
-    background-color: #0F1013;
 }
