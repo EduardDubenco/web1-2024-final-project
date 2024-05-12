@@ -1,9 +1,9 @@
 import React from "react";
 import BlueLine from "./img/Blue line.png";
-import "./Recommendation.css"
+import "./Goal.css"
 import Card_slider from "./Card_slider";
 
-export default function Recommendation(){
+export default function Goal(){
 
     const cards = [
         {
@@ -52,10 +52,10 @@ export default function Recommendation(){
     ];
 
     return(
-        <div className="rec">
-            <h2>Our Recommendation</h2>
+        <div className="goal">
+            <h2>¡GOOOOOOOOOL!</h2>
             <img src={BlueLine} alt={BlueLine}/>
-            <div className="rec-card">
+            <div className="goal-card">
                 {cards && cards.length > 0 && <Card_slider cards={cards}/>}
             </div>
         </div>
