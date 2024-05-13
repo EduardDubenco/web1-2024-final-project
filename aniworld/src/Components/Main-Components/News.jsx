@@ -9,8 +9,13 @@ export default function News(){
                 <h2>News AniWorld</h2>
                 <img src={OrangeLine} alt={OrangeLine}/>
             </div>
-            <div>
+            <div className="container">
+                <div>
 
+                </div>
+                <div>
+
+                </div>
             </div>
         </>
     )

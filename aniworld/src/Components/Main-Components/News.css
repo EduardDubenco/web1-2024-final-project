@@ -9,3 +9,12 @@
     font-weight: 400;
     margin-bottom: 0;
 }
+
+.container{
+    background-image: url("./img/News Banner background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 750px;
+}
+
