@@ -3,13 +3,18 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Card_slider_vertical_f = ({ cards }) => {
+const Card_slider_vertical = ({ cards }) => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        swipeToSlide: true,
+        slidesToShow: 1.2,
+        vertical: true,
+        verticalSwiping: false, // setează swipe-ul vertical
+        swipeToSlide: true, // permite swipe-ul pentru a schimba slide-urile
+        swipe: true, // permite swipe-ul
+        autoplay: true,
+        arrows: false,
     };
 
     return (
@@ -30,4 +35,4 @@ const Card_slider_vertical_f = ({ cards }) => {
     );
 };
 
-export default Card_slider_vertical_f;
+export default Card_slider_vertical;

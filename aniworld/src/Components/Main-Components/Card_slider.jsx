@@ -9,7 +9,7 @@ const Card_slider = ({ cards }) => {
         infinite: true,
         speed: 500,
         slidesToShow: 6,
-        slidesToScroll: 1,
+        swipeToSlide: true,
     };
 
     return (

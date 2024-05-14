@@ -11,7 +11,7 @@ const Card_slider_vertical_wa = ({ cards }) => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        swipeToSlide: true,
     };
 
     return (
