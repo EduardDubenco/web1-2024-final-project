@@ -8,7 +8,7 @@ const Card_slider_vertical = ({ cards }) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1.2,
+        slidesToShow: 1.37,
         vertical: true,
         verticalSwiping: false, // setează swipe-ul vertical
         swipeToSlide: true, // permite swipe-ul pentru a schimba slide-urile

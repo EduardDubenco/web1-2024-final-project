@@ -10,6 +10,7 @@ import Watch_again from "./Components/Main-Components/Watch_again";
 import Favorites from "./Components/Main-Components/Favorites";
 import Goal from "./Components/Main-Components/Goal";
 import News from "./Components/Main-Components/News";
+import Rec from "./Components/Main-Components/Rec";
 
 export const CustomButton = styled(Button)`
     background-color: #F47521;
@@ -37,6 +38,7 @@ function App() {
           <Favorites/>
           <Goal/>
           <News/>
+          <Rec/>
 
           <Footer/>
       </>

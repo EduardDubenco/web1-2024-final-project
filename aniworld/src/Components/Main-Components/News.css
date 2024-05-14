@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    border-radius: 5%;
     height: 750px;
     color: #FFFFFF;
     display: flex;
@@ -28,21 +29,26 @@
     margin: 1em auto;
 }
 
+.black_back h1{
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
 .container-grid{
     display: grid;
     grid-template-columns: 30% 70%;
     grid-gap: 0;
 }
 
-
 .news_card a{
     color: white;
     text-decoration: none;
 }
 
-.news_card{
-    width: 243px;
-    height: 261px;
+.recent_card a{
+    color: white;
+    text-decoration: none;
 }
 
 .news_card img{
@@ -50,3 +56,37 @@
     width: 240px;
 }
 
+.recent_card img{
+    height: 80px;
+    width: 140px;
+}
+
+.news_card{
+    width: 243px;
+    height: 261px;
+}
+
+.recent_card{
+    width: 716px;
+    height: 80px;
+}
+
+.news_card p{
+    font-size: 14px;
+    font-weight: 100;
+    color: gray;
+}
+
+.news_card p span{
+    color: white;
+}
+
+.recent_card p{
+    font-size: 14px;
+    font-weight: 100;
+    color: gray;
+}
+
+.recent_card p span{
+    color: white;
+}

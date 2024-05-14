@@ -2,6 +2,7 @@ import React from 'react';
 import OrangeLine from "./img/Orange line.png";
 import "./News.css"
 import Card_slider_vertical from "./Card_slider_vertical";
+import Card_slider_recent from "./Card_slider_recent";
 
 export default function News(){
 
@@ -68,7 +69,9 @@ export default function News(){
                         </div>
                         <div className="recent">
                             <h1>Most Recent</h1>
-
+                            <div className="recent_card">
+                                {cards && cards.length > 0 && <Card_slider_recent cards={cards}/>}
+                            </div>
                         </div>
                     </div>
                 </div>
