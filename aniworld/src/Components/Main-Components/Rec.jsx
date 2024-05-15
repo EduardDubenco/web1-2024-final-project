@@ -1,28 +1,58 @@
 import React from "react";
-import "./Recommendation.css"
-import Card_slider_recent from "./Card_slider_recent";
+import "./Rec.css"
+import Card_slider_banner from "./Card_slider_banner";
 
 export default function Recommendation(){
 
     const cards = [
         {
-            title: 'Shinobi no Ittoki',
-            description: 'Serie • Subtitulado',
-            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/633348623ef03057472888.jpg',
+            title: 'BOCCHI THE ROCK!',
+            description: 'Inmo sigue experimentando la inmortalidad en el doblaje de la segunda temporada de To...• Nov 13, 2022 2:32pm GTM-7 por A. Trejo Mosquera',
+            image: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/10/Bocchi-The-Rock!-Hitori-Succeeds-At-Customer-Service-Through-Exposure.jpg',
             link: 'https://animego.org/media/cache/thumbs_250x350',
         },
         {
-            title: 'Dragon Ball Z',
-            description: 'Serie • Sub  | Dob',
-            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/5ab170ba1c5bf082268556.jpg',
+            title: 'CHAINSAW MAN',
+            description: 'T1 E5 - Episodio 05',
+            image: 'https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/ea075b926e1073f4eb016bff8cdb434c.jpe',
             link: 'https://animego.org/media/cache/thumbs_250x350',
-        }
+        },
+        {
+            title: 'MOB PSYCHO 100',
+            description: 'T3 E6 - Divine Tree 3 ~Dimple is~',
+            image: 'https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/c0e2440d3f27196ba37abaed8b824df5.jpe',
+            link: 'https://animego.org/media/cache/thumbs_250x350',
+        },
+        {
+            title: 'MY HERO ACADEMIA',
+            description: 'T6 E120 - Disaster Walker',
+            image: 'https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/aa31911c746c4d7d027b190f2e184834.jpe',
+            link: 'https://animego.org/media/cache/thumbs_250x350',
+        },
+        {
+            title: 'My Hero Academia',
+            description: 'Serie • Doblajes',
+            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/660426c6bec6d347895719.jpg',
+            link: 'https://animego.org/media/cache/thumbs_250x350',
+        },
+        {
+            title: 'Saint Seiya',
+            description: 'Serie • Doblajes',
+            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/648ad8e4f2e7b353072260.jpg',
+            link: 'https://animego.org/media/cache/thumbs_250x350',
+        },
+        {
+            title: 'Aoashi',
+            description: 'Serie • Doblajes',
+            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/6252cee9478db940119595.jpg',
+            link: 'https://animego.org/media/cache/thumbs_250x350',
+        },
     ];
 
     return(
-        <div className="rec">
-            <div className="rec-card">
-                {cards && cards.length > 0 && <Card_slider_recent cards={cards}/>}
+        <div className="rec1">
+            <div className="rec1-card">
+                {cards && cards.length > 0 && <Card_slider_banner cards={cards}/>}
             </div>
         </div>
     )
