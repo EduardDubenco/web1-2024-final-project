@@ -9,6 +9,19 @@ import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
 import {defaultTheme} from "../../App";
 import {CustomButton} from "../../App";
+import "./signin.css"
+import Logo from "./img/Logo.png"
+
+function Navbar(){
+    return(
+        <a className="navbar" href="./MainPage.jsx">
+            <p>
+                <img src={Logo} alt="Logo"/>
+                AniWorld
+            </p>
+        </a>
+    );
+}
 
 function Copyright(props) {
     return (
@@ -23,8 +36,6 @@ function Copyright(props) {
     );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
-
 export default function SignUp() {
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -37,6 +48,7 @@ export default function SignUp() {
 
     return (
         <ThemeProvider theme={defaultTheme}>
+            <Navbar/>
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
                 <Box

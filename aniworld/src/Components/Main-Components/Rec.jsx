@@ -32,19 +32,7 @@ export default function Recommendation(){
         {
             title: 'My Hero Academia',
             description: 'Serie • Doblajes',
-            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/660426c6bec6d347895719.jpg',
-            link: 'https://animego.org/media/cache/thumbs_250x350',
-        },
-        {
-            title: 'Saint Seiya',
-            description: 'Serie • Doblajes',
-            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/648ad8e4f2e7b353072260.jpg',
-            link: 'https://animego.org/media/cache/thumbs_250x350',
-        },
-        {
-            title: 'Aoashi',
-            description: 'Serie • Doblajes',
-            image: 'https://animego.org/media/cache/thumbs_250x350/upload/anime/images/6252cee9478db940119595.jpg',
+            image: 'https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/aa31911c746c4d7d027b190f2e184834.jpe',
             link: 'https://animego.org/media/cache/thumbs_250x350',
         },
     ];
