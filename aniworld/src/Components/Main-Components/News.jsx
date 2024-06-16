@@ -60,20 +60,31 @@ export default function News(){
                         <h2>News AniWorld</h2>
                         <img src={OrangeLine} alt={OrangeLine}/>
                     </div>
-                    <div className="container-grid">
-                        <div className="news">
-                            <h1>AniWorld News</h1>
-                            <div className="news_card">
-                                {cards && cards.length > 0 && <Card_slider_vertical cards={cards}/>}
+                        <div className="app-container">
+                            <div className="vertical-cards-container">
+                                {cards.map((card, index) => (
+                                    <div className="vertical-card" key={index}>
+                                        <img src={card.image} alt={card.title}/>
+                                        <div className="vertical-card-text">
+                                            <h3>{card.title}</h3>
+                                            <p>{card.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="horizontal-cards-container">
+                                {cards.map((card, index) => (
+                                    <div className="horizontal-card" key={index}>
+                                        <img src={card.image} alt={card.title}/>
+                                        <div className="horizontal-card-text">
+                                            <h3>{card.title}</h3>
+                                            <p>{card.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
-                        <div className="recent">
-                            <h1>Most Recent</h1>
-                            <div className="recent_card">
-                                {cards && cards.length > 0 && <Card_slider_recent cards={cards}/>}
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </>
