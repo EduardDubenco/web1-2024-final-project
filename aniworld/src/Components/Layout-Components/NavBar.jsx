@@ -12,7 +12,7 @@ export default function NavBar() {
                 <nav className="nav-head">
                     <ul className="ul-left">
                         <li>
-                            <a id="logo-header" href="/MainPage">
+                            <a id="logo-header" href="/aniworld/src/Components/MainPage">
                                 <img src={logo} alt=""/>
                                 AniWorld
                             </a>
@@ -31,7 +31,7 @@ export default function NavBar() {
                         <li>
                             <SearchAppBar/>
                         </li>
-                        <li>
+                        <li className='some-padding'>
                             <AccountMenu/>
                         </li>
                     </ul>

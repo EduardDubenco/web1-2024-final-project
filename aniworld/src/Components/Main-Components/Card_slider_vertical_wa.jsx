@@ -7,7 +7,7 @@ import RePlay from './img/icons8-replay-64.png'
 
 const Card_slider_vertical_wa = ({ cards }) => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,

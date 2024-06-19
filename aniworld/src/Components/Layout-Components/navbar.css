@@ -26,6 +26,10 @@ nav.nav-head .ul-left li{
     padding: 1.1em;
 }
 
+.some-padding{
+    padding: 1.1em;
+}
+
 nav.nav-head .ul-right{
     display: flex;
     align-items: center;
@@ -33,11 +37,7 @@ nav.nav-head .ul-right{
     width: 30%;
     margin-left: 15em;
     margin-right: auto;
-    height: 30px;
-}
-
-nav.nav-head .ul-right li{
-    padding: 1.1em;
+    height: 28px;
 }
 
 nav.nav-head .ul-left li a{

@@ -14,7 +14,7 @@ import Logo from "./img/Logo.png"
 
 function Navbar(){
     return(
-        <a className="navbar" href="./MainPage.jsx">
+        <a className="navbar" href="../MainPage.jsx">
             <p>
                 <img src={Logo} alt="Logo"/>
                 AniWorld
@@ -27,7 +27,7 @@ function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Copyright © '}
-            <Link color="inherit" href="/MainPage">
+            <Link color="inherit" href="/aniworld/src/Components/MainPage">
                 AniWorld
             </Link>{' '}
             {new Date().getFullYear()}

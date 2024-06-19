@@ -9,7 +9,6 @@
  import Tooltip from '@mui/material/Tooltip';
  import BookmarkIcon from '@mui/icons-material/Bookmark';
  import AccountCircleIcon from '@mui/icons-material/AccountCircle';
- import Settings from '@mui/icons-material/Settings';
  import Logout from '@mui/icons-material/Logout';
  import { orange } from '@mui/material/colors';
 
@@ -80,12 +79,7 @@
                      <AccountCircleIcon sx={{ color: orange[500] , pr: 1.9 }} /> My account
                  </MenuItem>
                  <Divider />
-                 <MenuItem onClick={handleClose}>
-                     <ListItemIcon>
-                         <Settings fontSize="small" sx={{ color: orange[800] }} />
-                     </ListItemIcon>
-                     Settings
-                 </MenuItem>
+
                  <MenuItem onClick={handleClose}>
                      <ListItemIcon>
                          <Logout fontSize="small" sx={{ color: orange[800] }} />

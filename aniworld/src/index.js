@@ -1,19 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 import SignIn from "./Components/Pages/SignIn";
 import SignUp from "./Components/Pages/SignUp";
 import NavBar from "./Components/Layout-Components/NavBar";
+import Profile from "./Components/Pages/Profile";
+import Header from "./Components/Main-Components/Header";
+import MainPage from "./Components/MainPage";
+import WatchPage from "./Components/Pages/WatchPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+    <React.StrictMode>
 
-    <App />
-    {/*{<SignIn/>}*/}
-    {/*{<SignUp/>}*/}
+        {/*<WatchPage/>*/}
+        <MainPage/>
+        {/*<App />*/}
+        {/*<Profile/>*/}
+        {/*{<SignIn/>}*/}
+        {/*{<SignUp/>}*/}
 
   </React.StrictMode>
 );

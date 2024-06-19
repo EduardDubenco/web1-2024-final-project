@@ -1,8 +1,6 @@
 import React from 'react';
 import OrangeLine from "./img/Orange line.png";
 import "./News.css"
-import Card_slider_vertical from "./Card_slider_vertical";
-import Card_slider_recent from "./Card_slider_recent";
 
 export default function News(){
 
@@ -54,7 +52,7 @@ export default function News(){
 
     return(
         <>
-            <div className="container">
+            <div className="container" id="news-anchor">
                 <div className="black_back">
                     <div className="head">
                         <h2>News AniWorld</h2>
