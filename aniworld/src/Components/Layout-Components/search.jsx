@@ -5,7 +5,14 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import axios from 'axios';
+
+const ANIME_SUGGESTIONS = [
+    { id: 1, title: 'Naruto', imageUrl: 'https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg' },
+    { id: 2, title: 'Attack on Titan', imageUrl: 'link_către_imaginea_attack_on_titan' },
+    { id: 3, title: 'One Piece', imageUrl: 'link_către_imaginea_one_piece' },
+    { id: 4, title: 'My Hero Academia', imageUrl: 'link_către_imaginea_my_hero_academia' },
+];
+
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -50,7 +57,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const SuggestionsContainer = styled('div')(({ theme }) => ({
     position: 'absolute',
-    backgroundColor: '#909CA2',
+    backgroundColor: '#282c34',
     color: '#FFFFFF',
     width: '100%',
     maxHeight: '200px',
@@ -64,10 +71,20 @@ const Suggestion = styled('div')(({ theme }) => ({
     padding: theme.spacing(1),
     borderBottom: '1px solid #ccc',
     cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
     '&:hover': {
         backgroundColor: alpha(theme.palette.common.black, 0.1),
     },
 }));
+
+const SuggestionImage = styled('img')({
+    width: '50px',
+    height: '50px',
+    marginRight: '10px',
+    borderRadius: '5px',
+    objectFit: 'cover',
+});
 
 export default function SearchAppBar() {
     const [query, setQuery] = useState('');
@@ -75,9 +92,10 @@ export default function SearchAppBar() {
 
     useEffect(() => {
         if (query.length > 2) {
-            axios.get(`/api/anime/search?query=${query}`)
-                .then(response => setSuggestions(response.data))
-                .catch(error => console.error(error));
+            const filteredSuggestions = ANIME_SUGGESTIONS.filter(anime =>
+                anime.title.toLowerCase().includes(query.toLowerCase())
+            );
+            setSuggestions(filteredSuggestions);
         } else {
             setSuggestions([]);
         }
@@ -101,6 +119,7 @@ export default function SearchAppBar() {
                             <SuggestionsContainer>
                                 {suggestions.map((anime) => (
                                     <Suggestion key={anime.id}>
+                                        <SuggestionImage src={anime.imageUrl} alt={anime.title} />
                                         {anime.title}
                                     </Suggestion>
                                 ))}
