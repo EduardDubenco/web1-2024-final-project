@@ -21,6 +21,7 @@ root.render(
                 <Route path="/profile" element={<Profile/>}/>
             </Routes>
         </Router>
+        {/*<WatchPage/>*/}
     </React.StrictMode>
 );
 
