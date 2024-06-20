@@ -6,13 +6,14 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
-import "./signin.css"
-import {defaultTheme} from "../../App";
-import {CustomButton} from "../../App";
-import Logo from "./img/Logo.png"
-import {Link, useLocation, useParams} from 'react-router-dom';
+import "./signin.css";
+import { defaultTheme } from "../../App";
+import { CustomButton } from "../../App";
+import Logo from "./img/Logo.png";
+import { Link, useLocation, useParams } from 'react-router-dom';
+import supabase from '../../supabaseClient'; // importă supabaseClient
 
-function Navbar(){
+function Navbar() {
     return (
         <a className="navbar">
             <p>
@@ -23,7 +24,7 @@ function Navbar(){
                     alignItems: 'center',
                     marginTop: '0.6em',
                 }}>
-                    <img src={Logo} alt="Logo" style={{marginRight: '0.2em', marginTop: "-0.1em",}}/>
+                    <img src={Logo} alt="Logo" style={{ marginRight: '0.2em', marginTop: "-0.1em", }} />
                     AniWorld
                 </Link>
             </p>
@@ -35,7 +36,7 @@ function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Copyright © '}
-            <Link color="inherit" to="/" style={{textDecoration: 'none', color: '#F47521',}}>
+            <Link color="inherit" to="/" style={{ textDecoration: 'none', color: '#F47521', }}>
                 AniWorld
             </Link>{' '}
             {new Date().getFullYear()}
@@ -45,20 +46,24 @@ function Copyright(props) {
 }
 
 export default function SignIn() {
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get('email'),
-            password: data.get('password'),
-        });
-    };
+        const email = data.get('email');
+        const password = data.get('password');
 
-    console.log("auf");
+        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) {
+            console.error('Error logging in:', error.message);
+        } else {
+            console.log('Logged in successfully!');
+            // Redirect or perform any other necessary actions upon successful login
+        }
+    };
 
     return (
         <ThemeProvider theme={defaultTheme}>
-            <Navbar/>
+            <Navbar />
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
                 <Box
@@ -104,12 +109,12 @@ export default function SignIn() {
                         </CustomButton>
                         <Grid container>
                             <Grid item xs>
-                                <Link to="#" variant="body2" style={{textDecoration: 'none', color: '#F47521',}}>
+                                <Link to="#" variant="body2" style={{ textDecoration: 'none', color: '#F47521', }}>
                                     Forgot password?
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link to="/SignUp" variant="body2" style={{textDecoration: 'none', color: '#F47521',}}>
+                                <Link to="/SignUp" variant="body2" style={{ textDecoration: 'none', color: '#F47521', }}>
                                     {"No account? Create one"}
                                 </Link>
                             </Grid>
