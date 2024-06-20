@@ -8,9 +8,9 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const ANIME_SUGGESTIONS = [
     { id: 1, title: 'Naruto', imageUrl: 'https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg' },
-    { id: 2, title: 'Attack on Titan', imageUrl: 'link_către_imaginea_attack_on_titan' },
-    { id: 3, title: 'One Piece', imageUrl: 'link_către_imaginea_one_piece' },
-    { id: 4, title: 'My Hero Academia', imageUrl: 'link_către_imaginea_my_hero_academia' },
+    { id: 2, title: 'Attack on Titan', imageUrl: 'link' },
+    { id: 3, title: 'One Piece', imageUrl: 'link' },
+    { id: 4, title: 'My Hero Academia', imageUrl: 'link' },
 ];
 
 

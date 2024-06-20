@@ -1,17 +1,8 @@
 import './App.css';
-import Footer from "./Components/Layout-Components/Footer";
-import NavBar from "./Components/Layout-Components/NavBar";
-import MainPage from "./Components/MainPage";
 import {createTheme} from "@mui/material/styles";
 import { styled } from '@mui/system';
 import Button from '@mui/material/Button';
-import Recommendation from "./Components/Main-Components/Recommendation";
-import Watch_again from "./Components/Main-Components/Watch_again";
-import Favorites from "./Components/Main-Components/Favorites";
-import Goal from "./Components/Main-Components/Goal";
-import News from "./Components/Main-Components/News";
-import Rec from "./Components/Main-Components/Rec";
-import Header from "./Components/Main-Components/Header";
+
 
 export const CustomButton = styled(Button)`
     background-color: #F47521;

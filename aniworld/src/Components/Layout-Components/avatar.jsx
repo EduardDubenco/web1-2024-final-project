@@ -11,6 +11,7 @@
  import AccountCircleIcon from '@mui/icons-material/AccountCircle';
  import Logout from '@mui/icons-material/Logout';
  import { orange } from '@mui/material/colors';
+ import {Link} from 'react-router-dom';
 
  export default function AccountMenu() {
      const [anchorEl, setAnchorEl] = React.useState(null);
@@ -73,18 +74,20 @@
                  anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
              >
                  <MenuItem onClick={handleClose}>
-                     <BookmarkIcon sx={{ color: orange[500] , pr: 1.9 }}/> BookMark
+                     <AccountCircleIcon sx={{ color: orange[500] , pr: 1.9 }} />
+                     <Link to="/profile" style={{textDecoration: 'none', color: 'black'}}>My Account</Link>
                  </MenuItem>
                  <MenuItem onClick={handleClose}>
-                     <AccountCircleIcon sx={{ color: orange[500] , pr: 1.9 }} /> My account
+                     <BookmarkIcon sx={{ color: orange[500] , pr: 1.9 }}/>
+                     <Link to="/profile" style={{textDecoration: 'none', color: 'black'}}>BookMark</Link>
                  </MenuItem>
                  <Divider />
-
                  <MenuItem onClick={handleClose}>
                      <ListItemIcon>
                          <Logout fontSize="small" sx={{ color: orange[800] }} />
                      </ListItemIcon>
-                     Logout
+                     <Link to="/signin" style={{textDecoration: 'none', color: 'black'}}>LogOut</Link>
+
                  </MenuItem>
              </Menu>
          </React.Fragment>

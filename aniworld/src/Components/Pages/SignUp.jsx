@@ -1,7 +1,6 @@
 import React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -11,13 +10,22 @@ import {defaultTheme} from "../../App";
 import {CustomButton} from "../../App";
 import "./signin.css"
 import Logo from "./img/Logo.png"
+import {Link, useLocation, useParams} from 'react-router-dom';
 
 function Navbar(){
-    return(
-        <a className="navbar" href="../MainPage.jsx">
+    return (
+        <a className="navbar">
             <p>
-                <img src={Logo} alt="Logo"/>
-                AniWorld
+                <Link to="/" style={{
+                    textDecoration: 'none',
+                    color: '#F47521',
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginTop: '0.6em',
+                }}>
+                    <img src={Logo} alt="Logo" style={{marginRight: '0.2em', marginTop: "-0.1em",}}/>
+                    AniWorld
+                </Link>
             </p>
         </a>
     );
@@ -27,7 +35,7 @@ function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Copyright © '}
-            <Link color="inherit" href="/aniworld/src/Components/MainPage">
+            <Link color="inherit" to="/" style={{textDecoration: 'none', color: '#F47521',}}>
                 AniWorld
             </Link>{' '}
             {new Date().getFullYear()}
@@ -95,7 +103,7 @@ export default function SignUp() {
                             Create Account
                         </CustomButton>
                         <Grid>
-                            <Link href="#" variant="body2">
+                            <Link to="/signin" variant="body2" style={{textDecoration: 'none', color: '#F47521',}}>
                                 Already have an account? Sign in
                             </Link>
                         </Grid>

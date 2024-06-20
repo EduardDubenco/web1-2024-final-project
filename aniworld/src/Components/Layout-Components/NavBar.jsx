@@ -4,6 +4,7 @@ import logo from './img/Logo.png';
 import AccountMenu from "./avatar";
 import SearchAppBar from "./search";
 import CategoriesButton from "../Main-Components/Categories";
+import {Link} from 'react-router-dom';
 
 export default function NavBar() {
     return(
@@ -12,10 +13,10 @@ export default function NavBar() {
                 <nav className="nav-head">
                     <ul className="ul-left">
                         <li>
-                            <a id="logo-header" href="/aniworld/src/Components/MainPage">
+                            <Link to="/" id="logo-header">
                                 <img src={logo} alt=""/>
                                 AniWorld
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <CategoriesButton/>
@@ -24,7 +25,7 @@ export default function NavBar() {
                             <a href="https://www.crunchyroll.com/ru/games/">Games</a>
                         </li>
                         <li>
-                            <a id="button" href="https://www.crunchyroll.com/ru/news">News</a>
+                            <Link to="/?section=news">News</Link>
                         </li>
                     </ul>
                     <ul className="ul-right">
