@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.css';
-import Banner from './img/SpyXFamily-large.png';
 
 const Carousel = () => {
     const [activeImage, setActiveImage] = useState(0);

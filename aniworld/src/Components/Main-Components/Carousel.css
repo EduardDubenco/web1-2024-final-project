@@ -1,13 +1,13 @@
 .carousel {
-    width: 1050px; /* Latime carousel */
-    margin: 0 auto; /* Amplasare pe mijloc */
-    text-align: center; /* Aliniere centrala */
+    width: 1050px;
+    margin: 0 auto;
+    text-align: center;
     padding-top: 2em;
 }
 
 .active-image {
-    width: 100%; /* Latime 100% */
-    height: 525px; /* Inaltime proportionala */
+    width: 100%;
+    height: 525px;
 }
 
 .navigation {
@@ -16,8 +16,8 @@
 }
 
 .button {
-    margin: 5px; /* Spatiu intre butoane */
-    padding: 10px 20px; /* Umplutura butoanelor */
+    margin: 5px;
+    padding: 10px 20px;
     border: 1px solid transparent;
     cursor: pointer;
     background-color: #23252B;
@@ -26,20 +26,20 @@
 
 .active-button {
     background-color: #F47521;
-    margin: 5px; /* Spatiu intre butoane */
-    padding: 10px 20px; /* Umplutura butoanelor */
+    margin: 5px;
+    padding: 10px 20px;
     border: 1px solid transparent;
     cursor: pointer;
 }
 
 .time-indicator {
-    margin-top: 10px; /* Distanta de la butoane */
+    margin-top: 10px;
 }
 
 .link {
     display: block;
-    margin-top: 10px; /* Distanta de la indicator timp */
-    padding: 10px 20px; /* Umplutura link-ului */
+    margin-top: 10px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
